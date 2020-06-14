@@ -9,10 +9,11 @@
 | Configuration   | TR                                 |
 | Experiment Type | Transport                          |
 | Beginning Date  | 20000101                           |
-| Resolution      | C180                               |
+| Model Resolution| C180                               |
 | Restart Source  |                                    |
 | Experiment Name | M2_TR_Trans_20000101               |
 | Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_TR_Trans_20000101 |
+| History Resolution | lat-lon: 360x181             |
 | Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR_Trans_20000101 |
 
 ## Changes in the RC Files
@@ -36,7 +37,6 @@ The following RC files were modified (with respect to the default settings)
      * Mode: Time averaged
      * Frequency: 24 hours
      * Duration:  24 hours
-     * Resolution: 360 181
      * Vertical levels: 1000 975 950 925 900 875 850 825 800
                          775 750 725 700 650 600 550 500 450
                          400 350 300 250 200 150 125 100  85
