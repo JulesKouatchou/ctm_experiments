@@ -20,7 +20,7 @@ The following RC files were modified (with respect to the default settings)
 * `TR_ExtData.rc`:
 
      - SF6 Emissions:   M2G (576x361, covering 1998–2020)
-     - Rn222 Emissions: Jacob et al or Zhang, Liu et al as Rn222 
+     - Rn222 Emissions: Jacob et al **OR** Zhang, Liu et al as Rn222 
 
 * In the files `TR_GridComp---Be10.rc`,  `TR_GridComp---Be7.rc`, `TR_GridComp---Be10s.rc`, 
   `TR_GridComp---Be7s.rc`, `TR_GridComp---Pb210.rc`, `TR_GridComp---Pb210s.rc`,
