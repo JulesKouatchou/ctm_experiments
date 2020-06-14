@@ -8,6 +8,8 @@
 | Experiment Type | Transport                          |
 | Beginning Date  | 20000101                           |
 | Experiment Name | M2_GCT-TR_Trans_20000101           |
+! Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_GCT-TR_Trans_20000101 |
+| Archive Directory | /archive/u/jkouatch/GEOSctm/M2_GCT-TR_Trans_20000101 |
 
 ## Changes in the RC Files
 
@@ -27,7 +29,7 @@ The following RC files were modified (with respect to the default settings)
 ## HISTORY Collections
 
 - `tavg3d_tracers`
-     * Time averaged
+     * Mode: Time averaged
      * Frequency: 24 hours
      * Duration:  24 hours
      * Resolution: 360 181
