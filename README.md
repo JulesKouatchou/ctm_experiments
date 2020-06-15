@@ -36,15 +36,15 @@ The following RC files were modified (with respect to the default settings)
 ## [HISTORY Collections](#)
 
 - `tavg3d_tracers`
-     * Mode: Time averaged
-     * Frequency: 24 hours
-     * Duration:  24 hours
-     * Vertical levels: 1000 975 950 925 900 875 850 825 800
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Vertical levels**: 1000 975 950 925 900 875 850 825 800
                          775 750 725 700 650 600 550 500 450
                          400 350 300 250 200 150 125 100  85
                           70  50  40  30  20  10   7   5   4
                            3   2   1 0.7 0.5 0.4 0.3 0.1
-     * Tracers: CO_25, CO_50,  CO_50_ea, CO_50_na, CO_50_eu, CO_50_sa
+     * **Tracers**: CO_25, CO_50,  CO_50_ea, CO_50_na, CO_50_eu, CO_50_sa
                 e90,   e90_n,  e90_s,    nh_5,     nh_50,    st80_25
                 aoa,   aoa_nh, aoa_bl,   Pb210,    Pb210s,   CH4I
                 Be7,   Be7s,   Be10,     Be10s,    SF6,      Rn222
