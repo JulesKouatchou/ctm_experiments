@@ -1,6 +1,8 @@
-# GEOS CTM Experiments
+# <span style="color: red">GEOS CTM Experiments</span>
 
-## Description
+## [Description](#)
+
+The settins below provide general information on how to identify a GEOS CTM experiment.
 
 | Experiment Info | Setting                            |
 |             --- | ---                                |
@@ -13,10 +15,10 @@
 | Restart Source  |                                    |
 | Experiment Name | M2_TR_Trans_20000101               |
 | Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_TR_Trans_20000101 |
-| History Resolution | lat-lon: 360x181             |
+| History Resolution |  360x181 (lat-lon grid)             |
 | Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR_Trans_20000101 |
 
-## Changes in the RC Files
+## [Changes in the RC Files](#)
 
 The following RC files were modified (with respect to the default settings)
 
@@ -31,7 +33,7 @@ The following RC files were modified (with respect to the default settings)
   `TR_GridComp---Be7s.rc`, `TR_GridComp---Pb210.rc`, `TR_GridComp---Pb210s.rc`,
   the radionuclides will use the GOCART schemes for convection and scavenging
 
-## HISTORY Collections
+## [HISTORY Collections](#)
 
 - `tavg3d_tracers`
      * Mode: Time averaged
