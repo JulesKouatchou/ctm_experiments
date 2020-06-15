@@ -8,15 +8,15 @@ The settins below provide general information on how to identify a GEOS CTM expe
 |             --- | ---                                |
 | GEOS CTM Tag    | Icarus-3_2_p9_CTM_MEM_16-r3-SLES12 |
 | Forcing Data    | MERRA2                             |
-| Configuration   | TR                                 |
+| Configuration   | TR+GCT                                 |
 | Experiment Type | Transport                          |
 | Beginning Date  | 20000101                           |
 | Model Resolution| C180                               |
 | Restart Source  |                                    |
-| Experiment Name | M2_TR_Trans_20000101               |
-| Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_TR_Trans_20000101 |
+| Experiment Name | M2_TR-GCT_Trans_20000101               |
+| Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_TR-GCT_Trans_20000101 |
 | History Resolution |  360x181 (lat-lon grid)             |
-| Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR_Trans_20000101 |
+| Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR-GCT_Trans_20000101 |
 
 ## [Changes in the RC Files](#)
 
