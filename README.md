@@ -35,11 +35,11 @@ The following RC files were modified (with respect to the default settings)
 
 ## [HISTORY Collections](#)
 
-- `tavg3d_tracers`
+- `tavg3d_tracers_p`
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Vertical levels**: 1000 975 950 925 900 875 850 825 800
+     * **Pressure levels**: 1000 975 950 925 900 875 850 825 800
                          775 750 725 700 650 600 550 500 450
                          400 350 300 250 200 150 125 100  85
                           70  50  40  30  20  10   7   5   4
@@ -48,3 +48,25 @@ The following RC files were modified (with respect to the default settings)
                 e90,   e90_n,  e90_s,    nh_5,     nh_50,    st80_25
                 aoa,   aoa_nh, aoa_bl,   Pb210,    Pb210s,   CH4I
                 Be7,   Be7s,   Be10,     Be10s,    SF6,      Rn222
+ 
+ - `tavg3d_aer_p`
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Pressure levels**: 1000 975 950 925 900 875 850 825 800
+                         775 750 725 700 650 600 550 500 450
+                         400 350 300 250 200 150 125 100  85
+                          70  50  40  30  20  10   7   5   4
+                           3   2   1 0.7 0.5 0.4 0.3 0.1
+     * **Aerosols**: DU, SS, BC, OC, CO, CO2,  SO2, SO4, NH3, NH4, NI
+                HNO3CONC,   NICONC
+
+
+ - `tavg3d_aer_v`
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Aerosols**: CO2, CO, COBBAE, COBBNA, COBBLA, COBBAF, COBBGL, CONBAS, CONBNA, CONBEU, CONBGL
+                du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
+                DMS, SO2, SO4, MSA, NH3, NH4a, NO3an1, NO3an2, NO3an3
+                BCphobic, BCphilic, OCphobic, OCphilic, pSO4tot, pSO4, pSO4g, pSO4aq, pSO4wt
