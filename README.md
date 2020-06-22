@@ -10,7 +10,7 @@ The settings below provide general information on how to identify a GEOS CTM exp
 | Forcing Data    | MERRA2                             |
 | Configuration   | TR+GCT                                 |
 | Experiment Type | Transport                          |
-| Beginning Date  | 20000101                           |
+| Beginning Date  | 20000101 (official) 19990626 (actual)  |
 | Model Resolution| C180                               |
 | Restart Source  | MERRA2_GMI at C180                 |
 | Experiment Name | M2_TR-GCT_Trans_20000101               |
