@@ -27,11 +27,13 @@ The following RC files were modified (with respect to the default settings)
 * `TR_ExtData.rc`:
 
      - SF6 Emissions:   M2G (576x361, covering 1998–2020)
-     - Rn222 Emissions: **Jacob et al** or **Zhang, Liu et al**
+     - Rn222 Emissions: **Zhang, Liu et al** (there is also the option to use **Jacob et al**)
 
 * In the files `TR_GridComp---Be10.rc`,  `TR_GridComp---Be7.rc`, `TR_GridComp---Be10s.rc`, 
   `TR_GridComp---Be7s.rc`, `TR_GridComp---Pb210.rc`, `TR_GridComp---Pb210s.rc`,
   the radionuclides will use the GOCART schemes for convection and scavenging
+  
+* `TR_GridComp---Rn222.rc`: Set `surface_constraint_count` to 2 and uncomment out the section with settings for `surf_con1` and `surf_con2`.
 
 ## [HISTORY Collections](#)
 
