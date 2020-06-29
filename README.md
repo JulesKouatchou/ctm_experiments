@@ -22,6 +22,10 @@ The settings below provide general information on how to identify a GEOS CTM exp
 
 The following RC files were modified (with respect to the default settings)
 
+* `CTM_GridComp.rc`: The variable output_forcingData was set to T.
+
+* `GEOS_ChemGridComp.rc1: The variables ENABLE_PCHEM, ENABLE_GOCART and ENABLE_TR were all set to TRUE.
+
 * `Chem_Registry.rc`: Use the 24 TR tracers listed in the `tavg3d_tracers` HISTORY collection
 
 * `TR_ExtData.rc`:
