@@ -72,8 +72,7 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: CO2, CO, COBBAE, COBBNA, COBBLA, COBBAF, COBBGL, CONBAS, CONBNA, CONBEU, CONBGL
-                     du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
+     * **Aerosols**: CO2, CO, du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
                      DMS, SO2, SO4, MSA, NH3, NH4a, NO3an1, NO3an2, NO3an3
                      BCphobic, BCphilic, OCphobic, OCphilic, pSO4tot, pSO4, pSO4g, pSO4aq, pSO4wt
 
