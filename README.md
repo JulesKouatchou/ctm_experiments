@@ -18,7 +18,7 @@ The settings below provide general information on how to identify a GEOS CTM exp
 | History Resolution |  360x181 (lat-lon grid)             |
 | Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR-GCT_Trans_20000101 |
 
-- The 01January2000 restart file was created by running the Icarus-3_2_p9_CTM_MEM_16-r3-SLES12 tag (starting from a GMI-MERRA2 16June1999 restart). 
+- The 01January2000 restart file was created by running the Icarus-3_2_p9_CTM_MEM_16-r3-SLES12 tag (starting from a MERRA2-GMI 16June1999 restart - see the end of this document). 
 - The 01January2000 restart file was modified by setting `aoa_bl` to `aoa`.
 
 ## [Changes in the RC Files](#)
@@ -40,11 +40,11 @@ The following RC files were modified (with respect to the default settings)
   `TR_GridComp---Be7s.rc`, `TR_GridComp---Pb210.rc`, `TR_GridComp---Pb210s.rc`,
   the radionuclides will use the GOCART schemes for convection and scavenging
   
-* `TR_GridComp---Rn222.rc`: Set `surface_constraint_count` to 2 and uncomment out the section with settings for `surf_con1` and `surf_con2`.
+* `TR_GridComp---Rn222.rc`: `surface_constraint_count` remains set to 0.
 
 ## [HISTORY Collections](#)
 
-- `tavg3d_tracers_p`
+- `tavg3d_tracers_p` (460 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -62,7 +62,7 @@ The following RC files were modified (with respect to the default settings)
                     CO_EAS_ANTHRO, CO_SEA_ANTHRO, CO_GLB_ANTHRO_NMVO, CO_NAM_ANTHRO_NMVOC
                     CO_EUR_ANTHRO_NMVOC, CO_SAS_ANTHRO_NMVOC, CO_EAS_ANTHRO_NMVOC, CO_SEA_ANTHRO_NMVOC
  
- - `tavg3d_trdiag_v`
+ - `tavg3d_trdiag_v` (680 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -77,7 +77,7 @@ The following RC files were modified (with respect to the default settings)
                     CVtend_Be7, CVtend_Be7s, CVtend_Be10, CVtend_Be10s, CVtend_Pb210, CVtend_Pb210s, CVtend_Rn222
  
  
- - `tavg3d_aer_p`
+ - `tavg3d_aer_p` (252 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -91,7 +91,7 @@ The following RC files were modified (with respect to the default settings)
                      HNO3CONC, NICONC
 
 
- - `tavg3d_aer_v`
+ - `tavg3d_aer_v` (778 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -100,7 +100,7 @@ The following RC files were modified (with respect to the default settings)
                      DMS, SO2, SO4, MSA, NH3, NH4a, NO3an1, NO3an2, NO3an3
                      BCphobic, BCphilic, OCphobic, OCphilic, pSO4tot, pSO4, pSO4g, pSO4aq, pSO4wt
 
- - `tavg3d_aerdiag_v`
+ - `tavg3d_aerdiag_v` (634 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -110,14 +110,14 @@ The following RC files were modified (with respect to the default settings)
                      NIEXTCOEF, NISCACOEF, SUCONC, SUEXTCOEF, SUSCACOEF, SUCONCanth, BCCONC
                      BCEXTCOEF, BCSCACOEF, BCCONCanth, BCCONCbiob, OCCONC, OCEXTCOEF, OCSCACOEF
 
- - `tavg2d_chm_x`
+ - `tavg2d_chm_x` ( 2.8 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
      * **Aerosols**: LWI
                      CO2EM001, CO2SC001, CO2CL001, COEM, COPD, COLS, COSC, COCL
 
- - `tavg2d_aer_x`
+ - `tavg2d_aer_x` (77 mb/days)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
@@ -153,7 +153,7 @@ The following RC files were modified (with respect to the default settings)
                      NISD003, NIDP001, NIDP002, NIDP003, NIWT001, NIWT002, NIWT003, NISV001, NISV002
                      NISV003, NH3EM, NH3DP, NH3WT, NH3SV, NH4SD, NH4DP, NH4WT, NH4SV
 
- - `inst2d_hwl_x`
+ - `inst2d_hwl_x` (230 Mb/day)
      * **Mode**: instantaneous
      * **Frequency**: 01 hours
      * **Duration**:  24 hours
