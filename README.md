@@ -6,17 +6,20 @@ The settings below provide general information on how to identify a GEOS CTM exp
 
 | Experiment Info | Setting                            |
 |             --- | ---                                |
-| GEOS CTM Tag    | Icarus-3_2_p9_CTM_MEM_16-r3-SLES12 |
+| GEOS CTM Tag    | Icarus-3_2_p9_CTM_MEM_16-r4-SLES12 |
 | Forcing Data    | MERRA2                             |
 | Configuration   | TR+GCT                                 |
 | Experiment Type | Transport                          |
-| Beginning Date  | 20000101 (official) 19990626 (actual)  |
+| Beginning Date  | 20000101  |
 | Model Resolution| C180                               |
 | Restart Source  | MERRA2_GMI at C180                 |
 | Experiment Name | M2_TR-GCT_Trans_20000101               |
-| Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r3-SLES12/M2_TR-GCT_Trans_20000101 |
+| Working Directory | /discover/nobackup/jkouatch/GEOS_CTM/Icarus-3_2_p9_CTM_MEM_16-r4-SLES12/M2_TR-GCT_Trans_20000101 |
 | History Resolution |  360x181 (lat-lon grid)             |
 | Archive Directory | /archive/u/jkouatch/GEOSctm/M2_TR-GCT_Trans_20000101 |
+
+- The 01January2000 restart file was created by running the Icarus-3_2_p9_CTM_MEM_16-r3-SLES12 tag (starting from a GMI-MERRA2 16June1999 restart). 
+- The 01January2000 restart file was modified by setting `aoa_bl` to `aoa`.
 
 ## [Changes in the RC Files](#)
 
@@ -54,6 +57,25 @@ The following RC files were modified (with respect to the default settings)
                     e90,   e90_n,  e90_s,    nh_5,     nh_50,    st80_25
                     aoa,   aoa_nh, aoa_bl,   Pb210,    Pb210s,   CH4I
                     Be7,   Be7s,   Be10,     Be10s,    SF6,      Rn222
+                    CO_GLB, CO_GLB_BB, CO_GLB_BB_NMVOC, CO_GLB_BIOG_NMVOC
+                    CO_GLB_ANTHRO, CO_NAM_ANTHRO, CO_EUR_ANTHRO, CO_SAS_ANTHRO
+                    CO_EAS_ANTHRO, CO_SEA_ANTHRO, CO_GLB_ANTHRO_NMVO, CO_NAM_ANTHRO_NMVOC
+                    CO_EUR_ANTHRO_NMVOC, CO_SAS_ANTHRO_NMVOC, CO_EAS_ANTHRO_NMVOC, CO_SEA_ANTHRO_NMVOC
+ 
+ - `tavg3d_trdiag_v`
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Tracers**: Rn222, Pb210,  Be7, Be10, Pb210s, Be7s, Be10s
+                    AIRDENS, AIRDENS_DRYP, DELP, LWI, PS, LWI, PHI, TROPP
+                    EM_Rn222, EM_Be7, EM_Be7s, EM_Be10, EM_Be10s
+                    PRtend_Pb210, PRtend_Pb210s
+                    DK_Be7, DK_Be7s, DK_Be10, DK_Be10s, DK_Pb210, DK_Pb210s, DK_Rn222
+                    DD_Be7, DD_Be7s, DD_Be10, DD_Be10s, DD_Pb210, DD_Pb210s
+                    WRtend_Be7, WRtend_Be7s, WRtend_Be10, WRtend_Be10s, WRtend_Pn210, WRtend_Pb210s
+                    WD_Be7, WD_Be7s, WD_Be10, WD_Be10s, WD_Pb210, WD_Pb210s
+                    CVtend_Be7, CVtend_Be7s, CVtend_Be10, CVtend_Be10s, CVtend_Pb210, CVtend_Pb210s, CVtend_Rn222
+ 
  
  - `tavg3d_aer_p`
      * **Mode**: Time averaged
@@ -64,15 +86,17 @@ The following RC files were modified (with respect to the default settings)
                          400 350 300 250 200 150 125 100  85
                           70  50  40  30  20  10   7   5   4
                            3   2   1 0.7 0.5 0.4 0.3 0.1
-     * **Aerosols**: DU, SS, BC, OC, CO, CO2,  SO2, SO4, NH3, NH4, NI
-                     HNO3CONC,   NICONC
+     * **Aerosols**: LWI, PS, RH, AIRDENs
+                     DU, SS, BC, OC, CO, CO2, SO2, SO4, NH3, NH4, NI
+                     HNO3CONC, NICONC
 
 
  - `tavg3d_aer_v`
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: CO2, CO, du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
+     * **Aerosols**: ps, delp, LWI, RH
+                     CO2, CO, du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
                      DMS, SO2, SO4, MSA, NH3, NH4a, NO3an1, NO3an2, NO3an3
                      BCphobic, BCphilic, OCphobic, OCphilic, pSO4tot, pSO4, pSO4g, pSO4aq, pSO4wt
 
@@ -80,13 +104,56 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: PS, DELP, LWI, AIRDENS, DUCONC, DUEXTCOEF, DUSCACOEF, SSCONC, 
+     * **Aerosols**: ps, delp, LWI, RH, AIRDENS
+                     DUCONC, DUEXTCOEF, DUSCACOEF, SSCONC, 
                      SSEXTCOEF, SSSCACOEF, NH4CONC, NH3CONC, HNO3CONC, NICONC, 
                      NIEXTCOEF, NISCACOEF, SUCONC, SUEXTCOEF, SUSCACOEF, SUCONCanth, BCCONC
                      BCEXTCOEF, BCSCACOEF, BCCONCanth, BCCONCbiob, OCCONC, OCEXTCOEF, OCSCACOEF
 
+ - `tavg2d_chm_x`
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Aerosols**: LWI
+                     CO2EM001, CO2SC001, CO2CL001, COEM, COPD, COLS, COSC, COCL
 
- - `inst2d_hwl`
+ - `tavg2d_aer_x`
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Aerosols**: LWI
+                     TOTEXTTAU, TOTSCATAU, TOTANGSTR, 
+                     DUEM001, DUEM002, DUEM003, DUEM004, DUEM005
+                     DUSD001, DUSD002, DUSD003, DUSD004, DUSD005
+                     DUDP001, DUDP002, DUDP003, DUDP004, DUDP005
+                     DUWT001, DUWT002, DUWT003, DUWT004, DUWT005
+                     DUSV001, DUSV002, DUSV003, DUSV004, DUSV005
+                     DUSMASS, DUCMASS, DUEXTTAU, DUSCATAU, DUANGSTR, DUEXTTFM, DUSCATFM
+                     DUSMASS25, DUCMASS25, DUEXTT25, DUSCAT25, DUAERIDX, DUFLUXU, DUFLUXV
+                     SSEM001, SSEM002, SSEM003, SSEM004, SSEM005
+                     SSSD001, SSSD002, SSSD003, SSSD004, SSSD005
+                     SSDP001, SSDP002, SSDP003, SSDP004, SSDP005
+                     SSWT001, SSWT002, SSWT003, SSWT004, SSWT005
+                     SSSV001, SSSV002, SSSV003, SSSV004, SSSV005
+                     SSSMASS, SSCMASS, SSEXTTAU, SSSCATAU, SSANGSTR, SSEXTTFM, SSSCATFM
+                     SSSMASS25, SSCMASS25, SSEXTT25, SSSCAT25, SSAERIDX, SSFLUXU, SSFLUXV
+                     SUEM001, SUEM002, SUEM003, SUEM004, SUSD001, SUSD002, SUSD003, SUSD004
+                     SUDP001, SUDP002, SUDP003, SUDP004, SUWT001, SUWT002, SUWT003, SUWT004
+                     SUSV001, SUSV002, SUSV003, SUSV004, SO2SMASS, SO2CMASS, SO4SMASS, SO4CMASS
+                     DMSSMASS, DMSCMASS, SUPSO2, SUPSO4G, SUPSO4AQ, SUPSO4WT, SUPMSA, SUEXTTAU
+                     SUSCATAU, SUANGSTR, SO4EMAN, SO2EMAN, SO2EMBB, SO2EMVN, SO2EMVE, SUFLUXU
+                     SUFLUXV, BCEM001, BCEM002, BCSD001, BCSD002, BCDP001, BCDP002, BCWT001, BCWT002
+                     BCSV001, BCSV002, BCSMASS, BCCMASS, BCEXTTAU, BCSCATAU, BCANGSTR, BCHYPHIL
+                     BCEMBB, BCEMBF, BCEMAN, BCFLUXU, BCFLUXV, OCEM001, OCEM002, OCSD001, OCSD002
+                     OCDP001, OCDP002, OCWT001, OCWT002, OCSV001, OCSV002, OCSMASS, OCCMASS, OCEXTTAU
+                     OCSCATAU, OCANGSTR, OCEMBB, OCEMBF, OCEMAN, OCEMBG, OCHYPHIL, OCFLUXU, OCFLUXV
+                     HNO3SMASS, NH3SMASS, NH4SMASS, NISMASS, NISMASS25, HNO3CMASS, NH3CMASS', NH4CMASS
+                     NICMASS, NICMASS25, NIEXTTFM, NISCATFM, NIEXTTAU, NISCATAU, NIANGSTR, NIFLUXU
+                     NIFLUXV, NIPNO3AQ, NIPNH4AQ, NIPNH3AQ, NIHT001, NIHT002, NIHT003, NISD001, NISD002
+                     NISD003, NIDP001, NIDP002, NIDP003, NIWT001, NIWT002, NIWT003, NISV001, NISV002
+                     NISV003, NH3EM, NH3DP, NH3WT, NH3SV, NH4SD, NH4DP, NH4WT, NH4SV
+
+ - `inst2d_hwl_x`
      * **Mode**: instantaneous
      * **Frequency**: 01 hours
      * **Duration**:  24 hours
