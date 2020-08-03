@@ -53,7 +53,7 @@ The following RC files were modified (with respect to the default settings)
                          400 350 300 250 200 150 125 100  85
                           70  50  40  30  20  10   7   5   4
                            3   2   1 0.7 0.5 0.4 0.3 0.1
-     * **Tracers**: CO_25, CO_50,  CO_50_ea, CO_50_na, CO_50_eu, CO_50_sa
+     * **Fields**:  CO_25, CO_50,  CO_50_ea, CO_50_na, CO_50_eu, CO_50_sa
                     e90,   e90_n,  e90_s,    nh_5,     nh_50,    st80_25
                     aoa,   aoa_nh, aoa_bl,   Pb210,    Pb210s,   CH4I
                     Be7,   Be7s,   Be10,     Be10s,    SF6,      Rn222
@@ -61,12 +61,21 @@ The following RC files were modified (with respect to the default settings)
                     CO_GLB_ANTHRO, CO_NAM_ANTHRO, CO_EUR_ANTHRO, CO_SAS_ANTHRO
                     CO_EAS_ANTHRO, CO_SEA_ANTHRO, CO_GLB_ANTHRO_NMVO, CO_NAM_ANTHRO_NMVOC
                     CO_EUR_ANTHRO_NMVOC, CO_SAS_ANTHRO_NMVOC, CO_EAS_ANTHRO_NMVOC, CO_SEA_ANTHRO_NMVOC
- 
+
+- `tavg3d_tracers_v` (460 Mb/day)
+     * **Mode**: Time averaged
+     * **Frequency**: 24 hours
+     * **Duration**:  24 hours
+     * **Fields**:  PS, CO_GLB, CO_GLB_BB, CO_GLB_BB_NMVOC, CO_GLB_BIOG_NMVOC
+                    CO_GLB_ANTHRO, CO_NAM_ANTHRO, CO_EUR_ANTHRO, CO_SAS_ANTHRO
+                    CO_EAS_ANTHRO, CO_SEA_ANTHRO, CO_GLB_ANTHRO_NMVO, CO_NAM_ANTHRO_NMVOC
+                    CO_EUR_ANTHRO_NMVOC, CO_SAS_ANTHRO_NMVOC, CO_EAS_ANTHRO_NMVOC, CO_SEA_ANTHRO_NMVOC
+                    
  - `tavg3d_trdiag_v` (680 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Tracers**: Rn222, Pb210,  Be7, Be10, Pb210s, Be7s, Be10s
+     * **Fields**:  Rn222, Pb210,  Be7, Be10, Pb210s, Be7s, Be10s
                     AIRDENS, AIRDENS_DRYP, DELP, LWI, PS, LWI, PHI, TROPP
                     EM_Rn222, EM_Be7, EM_Be7s, EM_Be10, EM_Be10s
                     PRtend_Pb210, PRtend_Pb210s
@@ -86,7 +95,7 @@ The following RC files were modified (with respect to the default settings)
                          400 350 300 250 200 150 125 100  85
                           70  50  40  30  20  10   7   5   4
                            3   2   1 0.7 0.5 0.4 0.3 0.1
-     * **Aerosols**: LWI, PS, RH, AIRDENs
+     * **Fields**:   LWI, PS, RH, AIRDENs
                      DU, SS, BC, OC, CO, CO2, SO2, SO4, NH3, NH4, NI
                      HNO3CONC, NICONC
 
@@ -95,7 +104,7 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: ps, delp, LWI, RH
+     * **Fields**:   ps, delp, LWI, RH
                      CO2, CO, du001, du002, du003, du004, du005, ss001, ss002, ss003, ss004, ss005
                      DMS, SO2, SO4, MSA, NH3, NH4a, NO3an1, NO3an2, NO3an3
                      BCphobic, BCphilic, OCphobic, OCphilic, pSO4tot, pSO4, pSO4g, pSO4aq, pSO4wt
@@ -104,7 +113,7 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: ps, delp, LWI, RH, AIRDENS
+     * **Fields**:   ps, delp, LWI, RH, AIRDENS
                      DUCONC, DUEXTCOEF, DUSCACOEF, SSCONC, 
                      SSEXTCOEF, SSSCACOEF, NH4CONC, NH3CONC, HNO3CONC, NICONC, 
                      NIEXTCOEF, NISCACOEF, SUCONC, SUEXTCOEF, SUSCACOEF, SUCONCanth, BCCONC
@@ -114,15 +123,14 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: LWI
+     * **Fields**:    LWI
                      CO2EM001, CO2SC001, CO2CL001, COEM, COPD, COLS, COSC, COCL
 
  - `tavg2d_aer_x` (77 mb/days)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
-     * **Aerosols**: LWI
-                     TOTEXTTAU, TOTSCATAU, TOTANGSTR, 
+     * **Fields**:   LWI, TOTEXTTAU, TOTSCATAU, TOTANGSTR, 
                      DUEM001, DUEM002, DUEM003, DUEM004, DUEM005
                      DUSD001, DUSD002, DUSD003, DUSD004, DUSD005
                      DUDP001, DUDP002, DUDP003, DUDP004, DUDP005
@@ -157,7 +165,7 @@ The following RC files were modified (with respect to the default settings)
      * **Mode**: instantaneous
      * **Frequency**: 01 hours
      * **Duration**:  24 hours
-     * **Aerosols**: TOTEXTTAU, TOTSCATAU, TOTANGSTR, DUEXTTAU, SSEXTTAU,  SUEXTTAU,  BCEXTTAU
+     * **Fields**:   TOTEXTTAU, TOTSCATAU, TOTANGSTR, DUEXTTAU, SSEXTTAU,  SUEXTTAU,  BCEXTTAU
                      OCEXTTAU,  NIEXTTAU,  DUSMASS,   SSSMASS,  DUSMASS25, SSSMASS25, 
                      SO4SMASS,  SO2SMASS,  BCSMASS,   OCSMASS,  NISMASS,   NISMASS25, PM, PM25
                 
