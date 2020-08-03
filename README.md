@@ -62,7 +62,7 @@ The following RC files were modified (with respect to the default settings)
                     CO_EAS_ANTHRO, CO_SEA_ANTHRO, CO_GLB_ANTHRO_NMVO, CO_NAM_ANTHRO_NMVOC
                     CO_EUR_ANTHRO_NMVOC, CO_SAS_ANTHRO_NMVOC, CO_EAS_ANTHRO_NMVOC, CO_SEA_ANTHRO_NMVOC
 
-- `tavg3d_tracers_v` (460 Mb/day)
+- `tavg3d_tracers_v` (300 Mb/day)
      * **Mode**: Time averaged
      * **Frequency**: 24 hours
      * **Duration**:  24 hours
